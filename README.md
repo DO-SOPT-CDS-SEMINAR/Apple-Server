@@ -5,6 +5,14 @@
 
 🐣서버 최강 YB : 이채은
 
+## 💻 Team-Puzzling Server Developers
+
+| 이채은 | 정홍준 |
+| :---------:|:----------:|
+|<img width="330" height="350" alt="image" src=""> | <img width="330" height="350" alt="image" src="https://github.com/Team-Puzzling/Puzzling_Server/assets/68415644/51bde41d-f223-44bc-b84b-fe47bb09fdde"> | 
+| [ChaeAg](https://github.com/ChaeAg) | [Hong0329](https://github.com/Hong0329) |
+<br>
+
 ## 역할 분담
 ![image](https://github.com/DO-SOPT-CDS-SEMINAR/Apple-Server/assets/97835512/a23f516e-f87f-4048-80ee-f0dbdf64a309)
 
