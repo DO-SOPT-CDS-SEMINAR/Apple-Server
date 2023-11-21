@@ -1,15 +1,12 @@
 # CDS3-Server
 
-## 팀원 소개
-💙서버 최강(?) OB : 정홍준
+## 💻 팀원 소개
+💙 서버 최강(?) OB : 정홍준
 
-🐣서버 최강 YB : 이채은
-
-## 💻 Team-Puzzling Server Developers
-
+🐸 서버 최강 YB : 이채은
 | 이채은 | 정홍준 |
 | :---------:|:----------:|
-|<img width="330" height="350" alt="image" src=""> | <img width="330" height="350" alt="image" src="https://github.com/Team-Puzzling/Puzzling_Server/assets/68415644/51bde41d-f223-44bc-b84b-fe47bb09fdde"> | 
+|<img width="330" height="350" alt="image" src="https://avatars.githubusercontent.com/u/109871579?v=4"> | <img width="330" height="350" alt="image" src="https://github.com/Team-Puzzling/Puzzling_Server/assets/68415644/51bde41d-f223-44bc-b84b-fe47bb09fdde"> | 
 | [ChaeAg](https://github.com/ChaeAg) | [Hong0329](https://github.com/Hong0329) |
 <br>
 
