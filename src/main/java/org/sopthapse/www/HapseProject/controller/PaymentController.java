@@ -12,6 +12,15 @@ import org.springframework.web.bind.annotation.*;
 public class PaymentController {
     private final PaymentService paymentService;
 
+    @PostMapping("/{modelType}/accessory")
+    public ResponseEntity<Message> getAccessoryByModelType(@PathVariable Long modelType) {
+        return ResponseEntity.ok().body(Message.of(
+                true,
+                "iPad Pro 악세서리 제품 정보 조회 성공",
+                paymentService.getAccessoryByModelType(modelType)
+        ));
+    }
+
     @GetMapping("/delivery-date")
     public ResponseEntity<Message> getDeliveryDate() {
         return ResponseEntity.ok().body(Message.of(
