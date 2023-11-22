@@ -1,5 +1,6 @@
 package org.sopthapse.www.HapseProject.service;
 
+import org.sopthapse.www.HapseProject.common.exception.BadRequestException;
 import org.sopthapse.www.HapseProject.dto.response.Accessory.AccessoryGetResponse;
 import org.springframework.stereotype.Service;
 
@@ -22,6 +23,6 @@ public class PaymentService {
         if(modelType == 2) {
             return AccessoryGetResponse.of("12.9(6세대)", 519000, imgUrls);
         }
-        throw new IllegalArgumentException("modelType이 잘못되었습니다.");
+        throw new BadRequestException("modelType이 잘못되었습니다.");
     }
 }
