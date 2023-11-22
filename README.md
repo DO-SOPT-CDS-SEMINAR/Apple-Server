@@ -1,9 +1,14 @@
 # CDS3-Server
 
-## 팀원 소개
-💙서버 최강(?) OB : 정홍준
+## 💻 팀원 소개
+💙 서버 최강(?) OB : 정홍준
 
-🐣서버 최강 YB : 이채은
+🐸 서버 최강 YB : 이채은
+| 이채은 | 정홍준 |
+| :---------:|:----------:|
+|<img width="330" height="350" alt="image" src="https://avatars.githubusercontent.com/u/109871579?v=4"> | <img width="330" height="350" alt="image" src="https://github.com/Team-Puzzling/Puzzling_Server/assets/68415644/51bde41d-f223-44bc-b84b-fe47bb09fdde"> | 
+| [ChaeAg](https://github.com/ChaeAg) | [Hong0329](https://github.com/Hong0329) |
+<br>
 
 ## 역할 분담
 ![image](https://github.com/DO-SOPT-CDS-SEMINAR/Apple-Server/assets/97835512/a23f516e-f87f-4048-80ee-f0dbdf64a309)
@@ -153,5 +158,6 @@
   ```
 
 ## ERD
-![image](https://github.com/DO-SOPT-CDS-SEMINAR/Apple-Server/assets/97835512/d740feba-56a8-4032-8175-318d7245b846)
+![image](https://github.com/DO-SOPT-CDS-SEMINAR/Apple-Server/assets/97835512/7b5aa93e-b978-4cf2-9803-56abcbfa2d40)
+
 

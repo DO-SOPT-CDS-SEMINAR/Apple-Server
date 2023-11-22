@@ -20,4 +20,13 @@ public class PaymentController {
                 paymentService.getAccessoryByModelType(modelType)
         ));
     }
+
+    @GetMapping("/delivery-date")
+    public ResponseEntity<Message> getDeliveryDate() {
+        return ResponseEntity.ok().body(Message.of(
+                true,
+                "iPad Pro 배송 도착 정보 조회 성공",
+                paymentService.getDeliveryDate()
+        ));
+    }
 }

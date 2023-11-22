@@ -5,6 +5,8 @@ import org.sopthapse.www.HapseProject.dto.response.Accessory.AccessoryGetRespons
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 @Service
 public class PaymentService {
@@ -25,4 +27,10 @@ public class PaymentService {
         }
         throw new BadRequestException("modelType이 잘못되었습니다.");
     }
+
+    public String getDeliveryDate() {
+        LocalDate deliveryDate = LocalDate.now().plusDays(3);
+        return deliveryDate.format(DateTimeFormatter.ofPattern("yyyy/MM/dd"));
+    }
 }
+
