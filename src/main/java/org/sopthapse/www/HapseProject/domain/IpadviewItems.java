@@ -15,12 +15,14 @@ public class IpadviewItems {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String productAsset;
     private String productName;
     private String productCost;
     private String productImgUrl;
 
     @Builder
-    public IpadviewItems(String productName, String productCost, String productImgUrl) {
+    public IpadviewItems(String productAsset, String productName, String productCost, String productImgUrl) {
+        this.productAsset = productAsset;
         this.productName = productName;
         this.productCost = productCost;
         this.productImgUrl = productImgUrl;
