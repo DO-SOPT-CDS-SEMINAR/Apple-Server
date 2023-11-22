@@ -158,5 +158,6 @@
   ```
 
 ## ERD
-![image](https://github.com/DO-SOPT-CDS-SEMINAR/Apple-Server/assets/97835512/d740feba-56a8-4032-8175-318d7245b846)
+![image](https://github.com/DO-SOPT-CDS-SEMINAR/Apple-Server/assets/97835512/7b5aa93e-b978-4cf2-9803-56abcbfa2d40)
+
 
