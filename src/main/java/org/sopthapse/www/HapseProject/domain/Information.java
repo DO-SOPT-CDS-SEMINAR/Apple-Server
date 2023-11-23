@@ -15,7 +15,7 @@ public class Information {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(length = 800)
+    @Column(length = 3000)
     private String content;
 
     @Builder
