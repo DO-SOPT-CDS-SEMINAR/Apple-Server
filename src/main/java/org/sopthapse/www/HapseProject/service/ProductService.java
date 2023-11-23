@@ -55,6 +55,7 @@ public class ProductService {
         if (productId != 1) {
             throw new BadRequestException("productId가 잘못되었습니다.");
         }
+    }
 
     public List<ProductBuyImageGetResponse> getProductBuyImages(Long productId) {
         if (productRepository.findById(productId).get().getProductBuyImages().isEmpty()) {

@@ -41,6 +41,8 @@ public class ProductController {
                 true,
                 "iPad Pro 배송 도착 정보 조회 성공",
                 productService.getDeliveryDate(productId)
+        ));
+    }
           
     @GetMapping("/{productId}/images")
     public ResponseEntity<Message> getProductBuyImages(@PathVariable Long productId) {
