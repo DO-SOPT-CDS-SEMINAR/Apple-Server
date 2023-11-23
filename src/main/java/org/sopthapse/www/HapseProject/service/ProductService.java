@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.sopthapse.www.HapseProject.common.exception.BadRequestException;
 import org.sopthapse.www.HapseProject.dto.response.Accessory.AccessoryGetResponse;
 import org.sopthapse.www.HapseProject.dto.response.Product.ProductGetResponse;
+import org.sopthapse.www.HapseProject.dto.response.ProductBuyImage.ProductBuyImageGetResponse;
 import org.sopthapse.www.HapseProject.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 
@@ -54,5 +55,13 @@ public class ProductService {
         if (productId != 1) {
             throw new BadRequestException("productId가 잘못되었습니다.");
         }
+
+    public List<ProductBuyImageGetResponse> getProductBuyImages(Long productId) {
+        if (productRepository.findById(productId).get().getProductBuyImages().isEmpty()) {
+            throw new BadRequestException("해당 제품의 구입하기 이미지가 존재하지 않습니다.");
+        }
+        return productRepository.findById(productId).get().getProductBuyImages().stream()
+                .map(ProductBuyImageGetResponse::of)
+                .collect(Collectors.toList());
     }
 }

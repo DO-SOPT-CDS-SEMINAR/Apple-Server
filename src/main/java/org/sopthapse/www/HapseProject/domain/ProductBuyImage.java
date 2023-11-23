@@ -9,22 +9,22 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
-@Table(name = "ipadview_items")
-public class IpadviewItems {
+@Table(name = "product_buy_image")
+public class ProductBuyImage {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String productAsset;
-    private String productName;
-    private String productCost;
+
     private String productImgUrl;
 
+    @ManyToOne
+    @JoinColumn(name = "product_id")
+    private Product product;
+
     @Builder
-    public IpadviewItems(String productAsset, String productName, String productCost, String productImgUrl) {
-        this.productAsset = productAsset;
-        this.productName = productName;
-        this.productCost = productCost;
+    public ProductBuyImage(Product product, String productImgUrl) {
+        this.product = product;
         this.productImgUrl = productImgUrl;
     }
 }

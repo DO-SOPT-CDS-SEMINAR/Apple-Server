@@ -6,33 +6,23 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
-@Table(name = "product")
-public class Product {
+@Table(name = "ipadview_item")
+public class IpadviewItem {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    private Long productType;
-
+    private String productAsset;
     private String productName;
-
     private String productCost;
-
     private String productImgUrl;
 
-    @OneToMany(mappedBy = "product")
-    private List<ProductBuyImage> productBuyImages = new ArrayList<>();
-
     @Builder
-    public Product(Long productType, String productName, String productCost, String productImgUrl) {
-        this.productType = productType;
+    public IpadviewItem(String productAsset, String productName, String productCost, String productImgUrl) {
+        this.productAsset = productAsset;
         this.productName = productName;
         this.productCost = productCost;
         this.productImgUrl = productImgUrl;
