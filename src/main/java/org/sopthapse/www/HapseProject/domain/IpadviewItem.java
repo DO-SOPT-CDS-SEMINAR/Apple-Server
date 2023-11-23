@@ -9,8 +9,8 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
-@Table(name = "ipadview_items")
-public class IpadviewItems {
+@Table(name = "ipadview_item")
+public class IpadviewItem {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,7 +21,7 @@ public class IpadviewItems {
     private String productImgUrl;
 
     @Builder
-    public IpadviewItems(String productAsset, String productName, String productCost, String productImgUrl) {
+    public IpadviewItem(String productAsset, String productName, String productCost, String productImgUrl) {
         this.productAsset = productAsset;
         this.productName = productName;
         this.productCost = productCost;
