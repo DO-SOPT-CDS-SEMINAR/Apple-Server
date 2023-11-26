@@ -124,37 +124,55 @@
 ## 프로젝트 구조
   ```
 ├── 📂 common
-|   ├── 📂 dto
-|   └── 📂 exception
+|   ├── 📂 advice
+│   │   └── ControllerExceptionAdvice
+|   ├── 📂 exception
+|   │   ├── BadRequestException
+│   │   └── BaseException
+|   └── 📂 response
+│       └── ApiResponse
 ├── 📂 config
-│   └──
+│   └── SecurityConfig
 ├── 📂 controller
-│   ├── 
-│   └── 
+│   ├── HealthCheckController
+│   ├── IpadviewItemController
+│   ├── MainController
+│   └── ProductController
 ├── 📂 domain
-│   ├── 
-│   └── 
+│   ├── Information
+│   ├── IpadviewItem
+│   ├── MainCategory
+│   ├── MainViewItem
+│   ├── Message
+│   ├── Product
+│   └── ProductBuyImage
 ├── 📂 dto
-│   ├── 📂 request
-│   |   ├── 📂 petition
-|   │   │   ├── 
-|   │   │   └── 
-│   │   └── 
 │   └── 📂 response
-│       ├── 📂 
-|       │   ├── 
-|       │   └── 
-│       ├── 📂 
-|       │   ├── 
-|       │   └── 
-│       └── 
+│       ├── 📂 Accessory
+|       │   └── AccessoryGetResponse
+│       ├── 📂 IpadviewItems
+|       │   └── IpadviewItemGetResponse
+│       ├── 📂 Main
+|       │   ├── MainCategoryGetResponse
+|       │   ├── MainInformationGetResponse
+|       │   └── MainviewItemGetResponse
+│       ├── 📂 Product
+|       │   └── ProductGetResponse
+│       └── 📂 ProductBuyImage
+|           └── ProductBuyImageGetResponse
 ├── 📂 repository
-│   ├── 
-│   └── 
+│   ├── IpadviewItemRepository
+│   ├── MainCategoryRepository
+│   ├── MainInformationRepository
+│   ├── MainViewItemRepository
+│   └── ProductRepository
 ├── 📂 service
-│   ├── 
-│   └── 
-└─Cds3Application
+│   ├── IpadviewItemService
+│   ├── MainCategoryService
+│   ├── MainInformationService
+│   ├── MainViewItemService
+│   └── ProductService
+└─ HapseProjectApplication
   ```
 
 ## ERD
