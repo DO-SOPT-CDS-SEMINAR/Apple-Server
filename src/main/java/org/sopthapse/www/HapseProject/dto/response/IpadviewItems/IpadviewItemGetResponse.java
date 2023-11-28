@@ -3,7 +3,7 @@ package org.sopthapse.www.HapseProject.dto.response.IpadviewItems;
 import org.sopthapse.www.HapseProject.domain.IpadviewItem;
 
 public record IpadviewItemGetResponse(
-        String productAsset,
+        Long productAsset,
         String productName,
         String productCost,
         String productImgUrl

@@ -16,7 +16,7 @@ public class MainViewItem {
     private Long id;
 
     @Column(name = "main_item_asset")
-    private String mainItemAsset;
+    private Long mainItemAsset;
 
     @Column(name = "main_item_name")
     private String mainItemName;
