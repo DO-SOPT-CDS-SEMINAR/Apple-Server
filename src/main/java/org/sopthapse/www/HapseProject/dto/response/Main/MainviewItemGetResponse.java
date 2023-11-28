@@ -3,7 +3,7 @@ package org.sopthapse.www.HapseProject.dto.response.Main;
 import org.sopthapse.www.HapseProject.domain.MainViewItem;
 
 public record MainviewItemGetResponse(
-        String mainItemAsset,
+        Long mainItemAsset,
         String mainItemName,
         String mainItemPrice,
         String mainCategoryImg
