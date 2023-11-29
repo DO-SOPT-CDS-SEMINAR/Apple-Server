@@ -27,14 +27,17 @@ public class Product {
 
     private String productImgUrl;
 
+    private String productSubName;
+
     @OneToMany(mappedBy = "product")
     private List<ProductBuyImage> productBuyImages = new ArrayList<>();
 
     @Builder
-    public Product(Long productType, String productName, String productCost, String productImgUrl) {
+    public Product(Long productType, String productName, String productCost, String productImgUrl, String productSubName) {
         this.productType = productType;
         this.productName = productName;
         this.productCost = productCost;
         this.productImgUrl = productImgUrl;
+        this.productSubName = productSubName;
     }
 }
